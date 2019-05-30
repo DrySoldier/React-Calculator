@@ -148,8 +148,8 @@ export default class App extends React.Component {
           {this.state.value}
         </div>
         <div className='button-viewport'>
-          {['AC', '+/-', '%', '/', 7, 8, 9, 'X', 4, 5, 6, '-', 1, 2, 3, '+', 0, '.', '=', <a target='_blank' rel="noopener noreferrer" href='https://github.com/DrySoldier/React-Calculator'>GITHUB</a>].map((element, index) => {
-            if (!isNaN(parseFloat(element)) || element === <a target='_blank' rel="noopener noreferrer" href='https://github.com/DrySoldier/React-Calculator'>GITHUB</a>) {
+          {['AC', '+/-', '%', '/', 7, 8, 9, 'X', 4, 5, 6, '-', 1, 2, 3, '+', 0, '.', '=', 'Made with love <3 and a night of no sleep'].map((element, index) => {
+            if (!isNaN(parseFloat(element)) || element === 'Made with love <3 and a night of no sleep') {
               return (
                 <div className='num-button' onClick={event => this.handleClick(event, element)}>
                   {element}
